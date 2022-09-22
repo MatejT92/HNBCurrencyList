@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38C6333128DB97BA00955363 /* APIRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6333028DB97BA00955363 /* APIRouterContract.swift */; };
+		38C6333328DB980800955363 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6333228DB980800955363 /* Config.swift */; };
+		38C6333628DB9A8200955363 /* LabelStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6333528DB9A8200955363 /* LabelStrings.swift */; };
+		38C6333A28DB9AEF00955363 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6333928DB9AEE00955363 /* Colors.swift */; };
+		38C6333F28DB9BE000955363 /* ExchangeRateRealmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6333E28DB9BE000955363 /* ExchangeRateRealmDataSource.swift */; };
+		38C6334128DB9BF700955363 /* ExchangeRateRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6334028DB9BF700955363 /* ExchangeRateRemoteDataSource.swift */; };
+		38C6334828DB9CBA00955363 /* ExchangeRateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6334728DB9CBA00955363 /* ExchangeRateRepository.swift */; };
+		38C6334E28DB9D9D00955363 /* ExchangeRateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6334D28DB9D9D00955363 /* ExchangeRateUseCase.swift */; };
+		38C6335028DB9DB500955363 /* ExchangeRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6334F28DB9DB500955363 /* ExchangeRateModel.swift */; };
+		38C6335228DB9DD100955363 /* ExchangeRateRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6335128DB9DD000955363 /* ExchangeRateRepositoryContract.swift */; };
+		38C6335428DB9E4500955363 /* ExchangeRateMockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6335328DB9E4500955363 /* ExchangeRateMockUseCase.swift */; };
+		38C6335728DBA0C700955363 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6335628DBA0C700955363 /* Alamofire */; };
+		38C6335B28DBA1E900955363 /* HomeUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6335A28DBA1E900955363 /* HomeUseCaseContract.swift */; };
+		38C6335F28DBA25300955363 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6335E28DBA25300955363 /* HomeView.swift */; };
+		38C6336128DBA26000955363 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6336028DBA26000955363 /* HomeViewModel.swift */; };
+		38C6336328DBA7CA00955363 /* ExchangeRateResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6336228DBA7CA00955363 /* ExchangeRateResponseModel.swift */; };
+		38C6336528DBA9E500955363 /* ExchangeRateRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6336428DBA9E500955363 /* ExchangeRateRealmModel.swift */; };
+		38C6336E28DBAFC900955363 /* ExchangeRatesAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6336D28DBAFC900955363 /* ExchangeRatesAPIRouter.swift */; };
+		38C6337128DBB1E000955363 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6337028DBB1E000955363 /* Realm */; };
+		38C6337328DBB1E000955363 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6337228DBB1E000955363 /* RealmSwift */; };
+		38C6337628DBB2E500955363 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6337528DBB2E500955363 /* Realm.swift */; };
+		38C6337828DBB83F00955363 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6337728DBB83F00955363 /* String.swift */; };
+		38C6337E28DBC17200955363 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 38C6337D28DBC17200955363 /* Resolver */; };
+		38C6338028DBC1B100955363 /* HomeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6337F28DBC1B100955363 /* HomeViewFactory.swift */; };
+		38C6338328DBC24A00955363 /* ApplicationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6338228DBC24A00955363 /* ApplicationModule.swift */; };
+		38C6338528DC1DE600955363 /* ExchangeRateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6338428DC1DE600955363 /* ExchangeRateItem.swift */; };
+		38C6338728DC1E7C00955363 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6338628DC1E7C00955363 /* Fonts.swift */; };
+		38C6338928DC31B600955363 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6338828DC31B600955363 /* Date.swift */; };
+		38C6338B28DC394200955363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C6338A28DC394200955363 /* LaunchScreen.storyboard */; };
+		38C6338D28DC3C0100955363 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6338C28DC3C0100955363 /* NetworkConnectivity.swift */; };
+		38C6338F28DC3CF100955363 /* ForegroundObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C6338E28DC3CF100955363 /* ForegroundObserver.swift */; };
+		38F104B028DB923B00560BE9 /* HNBCurrencyListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F104A028DB923800560BE9 /* HNBCurrencyListApp.swift */; };
+		38F104B428DB923B00560BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F104A228DB923A00560BE9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38C6333028DB97BA00955363 /* APIRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouterContract.swift; sourceTree = "<group>"; };
+		38C6333228DB980800955363 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		38C6333528DB9A8200955363 /* LabelStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStrings.swift; sourceTree = "<group>"; };
+		38C6333928DB9AEE00955363 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		38C6333E28DB9BE000955363 /* ExchangeRateRealmDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRealmDataSource.swift; sourceTree = "<group>"; };
+		38C6334028DB9BF700955363 /* ExchangeRateRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRemoteDataSource.swift; sourceTree = "<group>"; };
+		38C6334728DB9CBA00955363 /* ExchangeRateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRepository.swift; sourceTree = "<group>"; };
+		38C6334D28DB9D9D00955363 /* ExchangeRateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateUseCase.swift; sourceTree = "<group>"; };
+		38C6334F28DB9DB500955363 /* ExchangeRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateModel.swift; sourceTree = "<group>"; };
+		38C6335128DB9DD000955363 /* ExchangeRateRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRepositoryContract.swift; sourceTree = "<group>"; };
+		38C6335328DB9E4500955363 /* ExchangeRateMockUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateMockUseCase.swift; sourceTree = "<group>"; };
+		38C6335A28DBA1E900955363 /* HomeUseCaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCaseContract.swift; sourceTree = "<group>"; };
+		38C6335E28DBA25300955363 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		38C6336028DBA26000955363 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		38C6336228DBA7CA00955363 /* ExchangeRateResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateResponseModel.swift; sourceTree = "<group>"; };
+		38C6336428DBA9E500955363 /* ExchangeRateRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRealmModel.swift; sourceTree = "<group>"; };
+		38C6336D28DBAFC900955363 /* ExchangeRatesAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesAPIRouter.swift; sourceTree = "<group>"; };
+		38C6337528DBB2E500955363 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		38C6337728DBB83F00955363 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		38C6337F28DBC1B100955363 /* HomeViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFactory.swift; sourceTree = "<group>"; };
+		38C6338228DBC24A00955363 /* ApplicationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationModule.swift; sourceTree = "<group>"; };
+		38C6338428DC1DE600955363 /* ExchangeRateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateItem.swift; sourceTree = "<group>"; };
+		38C6338628DC1E7C00955363 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		38C6338828DC31B600955363 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		38C6338A28DC394200955363 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38C6338C28DC3C0100955363 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectivity.swift; sourceTree = "<group>"; };
+		38C6338E28DC3CF100955363 /* ForegroundObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForegroundObserver.swift; sourceTree = "<group>"; };
+		38F104A028DB923800560BE9 /* HNBCurrencyListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNBCurrencyListApp.swift; sourceTree = "<group>"; };
+		38F104A228DB923A00560BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38F104A728DB923A00560BE9 /* MT_HNB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT_HNB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38F104A428DB923A00560BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C6337328DBB1E000955363 /* RealmSwift in Frameworks */,
+				38C6337128DBB1E000955363 /* Realm in Frameworks */,
+				38C6337E28DBC17200955363 /* Resolver in Frameworks */,
+				38C6335728DBA0C700955363 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38C6332928DB971300955363 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				38C6332C28DB974C00955363 /* Data */,
+				38C6332A28DB973A00955363 /* Domain */,
+				38C6332B28DB974100955363 /* Presentation */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		38C6332A28DB973A00955363 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				38C6334928DB9D5600955363 /* Exchange */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		38C6332B28DB974100955363 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				38C6335828DBA1B900955363 /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		38C6332C28DB974C00955363 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				38C6333B28DB9B8100955363 /* Exchange */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		38C6332D28DB976000955363 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				38C6338128DBC23700955363 /* DI */,
+				38C6337428DBB2D700955363 /* Extensions */,
+				38C6333228DB980800955363 /* Config.swift */,
+				38C6332E28DB977D00955363 /* Data */,
+				38C6333428DB9A6900955363 /* Resources */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		38C6332E28DB977D00955363 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				38C6332F28DB978100955363 /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		38C6332F28DB978100955363 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				38C6333028DB97BA00955363 /* APIRouterContract.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		38C6333428DB9A6900955363 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38C6333528DB9A8200955363 /* LabelStrings.swift */,
+				38C6333928DB9AEE00955363 /* Colors.swift */,
+				38C6338628DC1E7C00955363 /* Fonts.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		38C6333B28DB9B8100955363 /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				38C6334228DB9C4300955363 /* DataSource */,
+				38C6334328DB9C5000955363 /* Model */,
+				38C6334428DB9C5B00955363 /* Repository */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		38C6333C28DB9BC500955363 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				38C6333E28DB9BE000955363 /* ExchangeRateRealmDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		38C6333D28DB9BCB00955363 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				38C6334028DB9BF700955363 /* ExchangeRateRemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		38C6334228DB9C4300955363 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				38C6333D28DB9BCB00955363 /* Remote */,
+				38C6333C28DB9BC500955363 /* Local */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		38C6334328DB9C5000955363 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38C6336C28DBAFAF00955363 /* Request */,
+				38C6334528DB9C7900955363 /* Realm */,
+				38C6334628DB9C8300955363 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38C6334428DB9C5B00955363 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				38C6334728DB9CBA00955363 /* ExchangeRateRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		38C6334528DB9C7900955363 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				38C6336428DBA9E500955363 /* ExchangeRateRealmModel.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		38C6334628DB9C8300955363 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				38C6336228DBA7CA00955363 /* ExchangeRateResponseModel.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		38C6334928DB9D5600955363 /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				38C6334A28DB9D6A00955363 /* Contract */,
+				38C6334B28DB9D7100955363 /* Model */,
+				38C6334C28DB9D7700955363 /* UseCase */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		38C6334A28DB9D6A00955363 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				38C6335128DB9DD000955363 /* ExchangeRateRepositoryContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		38C6334B28DB9D7100955363 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38C6334F28DB9DB500955363 /* ExchangeRateModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38C6334C28DB9D7700955363 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				38C6334D28DB9D9D00955363 /* ExchangeRateUseCase.swift */,
+				38C6335328DB9E4500955363 /* ExchangeRateMockUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		38C6335828DBA1B900955363 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				38C6337F28DBC1B100955363 /* HomeViewFactory.swift */,
+				38C6335928DBA1C800955363 /* Contract */,
+				38C6335D28DBA23D00955363 /* ViewModel */,
+				38C6335C28DBA23500955363 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		38C6335928DBA1C800955363 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				38C6335A28DBA1E900955363 /* HomeUseCaseContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		38C6335C28DBA23500955363 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38C6338428DC1DE600955363 /* ExchangeRateItem.swift */,
+				38C6335E28DBA25300955363 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38C6335D28DBA23D00955363 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				38C6336028DBA26000955363 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		38C6336C28DBAFAF00955363 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				38C6336D28DBAFC900955363 /* ExchangeRatesAPIRouter.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		38C6337428DBB2D700955363 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				38C6338C28DC3C0100955363 /* NetworkConnectivity.swift */,
+				38C6338E28DC3CF100955363 /* ForegroundObserver.swift */,
+				38C6337528DBB2E500955363 /* Realm.swift */,
+				38C6337728DBB83F00955363 /* String.swift */,
+				38C6338828DC31B600955363 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		38C6338128DBC23700955363 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				38C6338228DBC24A00955363 /* ApplicationModule.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		38F1049A28DB923700560BE9 = {
+			isa = PBXGroup;
+			children = (
+				38F1049F28DB923800560BE9 /* Shared */,
+				38F104A828DB923A00560BE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38F1049F28DB923800560BE9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				38C6332D28DB976000955363 /* Common */,
+				38C6332928DB971300955363 /* App */,
+				38F104A028DB923800560BE9 /* HNBCurrencyListApp.swift */,
+				38C6338A28DC394200955363 /* LaunchScreen.storyboard */,
+				38F104A228DB923A00560BE9 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		38F104A828DB923A00560BE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38F104A728DB923A00560BE9 /* MT_HNB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38F104A628DB923A00560BE9 /* HNBCurrencyList (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38F104B828DB923B00560BE9 /* Build configuration list for PBXNativeTarget "HNBCurrencyList (iOS)" */;
+			buildPhases = (
+				38F104A328DB923A00560BE9 /* Sources */,
+				38F104A428DB923A00560BE9 /* Frameworks */,
+				38F104A528DB923A00560BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HNBCurrencyList (iOS)";
+			packageProductDependencies = (
+				38C6335628DBA0C700955363 /* Alamofire */,
+				38C6337028DBB1E000955363 /* Realm */,
+				38C6337228DBB1E000955363 /* RealmSwift */,
+				38C6337D28DBC17200955363 /* Resolver */,
+			);
+			productName = "HNBCurrencyList (iOS)";
+			productReference = 38F104A728DB923A00560BE9 /* MT_HNB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38F1049B28DB923700560BE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					38F104A628DB923A00560BE9 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 38F1049E28DB923700560BE9 /* Build configuration list for PBXProject "HNBCurrencyList" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38F1049A28DB923700560BE9;
+			packageReferences = (
+				38C6335528DBA0C700955363 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				38C6336F28DBB1E000955363 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				38C6337C28DBC17200955363 /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
+			productRefGroup = 38F104A828DB923A00560BE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38F104A628DB923A00560BE9 /* HNBCurrencyList (iOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38F104A528DB923A00560BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F104B428DB923B00560BE9 /* Assets.xcassets in Resources */,
+				38C6338B28DC394200955363 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38F104A328DB923A00560BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C6334E28DB9D9D00955363 /* ExchangeRateUseCase.swift in Sources */,
+				38C6334828DB9CBA00955363 /* ExchangeRateRepository.swift in Sources */,
+				38C6335B28DBA1E900955363 /* HomeUseCaseContract.swift in Sources */,
+				38C6336128DBA26000955363 /* HomeViewModel.swift in Sources */,
+				38C6335F28DBA25300955363 /* HomeView.swift in Sources */,
+				38C6338328DBC24A00955363 /* ApplicationModule.swift in Sources */,
+				38C6338728DC1E7C00955363 /* Fonts.swift in Sources */,
+				38C6333F28DB9BE000955363 /* ExchangeRateRealmDataSource.swift in Sources */,
+				38C6338528DC1DE600955363 /* ExchangeRateItem.swift in Sources */,
+				38C6338028DBC1B100955363 /* HomeViewFactory.swift in Sources */,
+				38C6335028DB9DB500955363 /* ExchangeRateModel.swift in Sources */,
+				38C6338928DC31B600955363 /* Date.swift in Sources */,
+				38C6333A28DB9AEF00955363 /* Colors.swift in Sources */,
+				38C6336328DBA7CA00955363 /* ExchangeRateResponseModel.swift in Sources */,
+				38C6334128DB9BF700955363 /* ExchangeRateRemoteDataSource.swift in Sources */,
+				38C6333628DB9A8200955363 /* LabelStrings.swift in Sources */,
+				38C6335428DB9E4500955363 /* ExchangeRateMockUseCase.swift in Sources */,
+				38C6335228DB9DD100955363 /* ExchangeRateRepositoryContract.swift in Sources */,
+				38C6336528DBA9E500955363 /* ExchangeRateRealmModel.swift in Sources */,
+				38C6338D28DC3C0100955363 /* NetworkConnectivity.swift in Sources */,
+				38C6337628DBB2E500955363 /* Realm.swift in Sources */,
+				38C6333328DB980800955363 /* Config.swift in Sources */,
+				38C6336E28DBAFC900955363 /* ExchangeRatesAPIRouter.swift in Sources */,
+				38C6337828DBB83F00955363 /* String.swift in Sources */,
+				38C6338F28DC3CF100955363 /* ForegroundObserver.swift in Sources */,
+				38C6333128DB97BA00955363 /* APIRouterContract.swift in Sources */,
+				38F104B028DB923B00560BE9 /* HNBCurrencyListApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		38F104B628DB923B00560BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		38F104B728DB923B00560BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		38F104B928DB923B00560BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = matej.terek.HNBCurrencyList;
+				PRODUCT_NAME = MT_HNB;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		38F104BA28DB923B00560BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = matej.terek.HNBCurrencyList;
+				PRODUCT_NAME = MT_HNB;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38F1049E28DB923700560BE9 /* Build configuration list for PBXProject "HNBCurrencyList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38F104B628DB923B00560BE9 /* Debug */,
+				38F104B728DB923B00560BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38F104B828DB923B00560BE9 /* Build configuration list for PBXNativeTarget "HNBCurrencyList (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38F104B928DB923B00560BE9 /* Debug */,
+				38F104BA28DB923B00560BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38C6335528DBA0C700955363 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		38C6336F28DBB1E000955363 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.8.0;
+			};
+		};
+		38C6337C28DBC17200955363 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38C6335628DBA0C700955363 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38C6335528DBA0C700955363 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		38C6337028DBB1E000955363 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38C6336F28DBB1E000955363 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		38C6337228DBB1E000955363 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38C6336F28DBB1E000955363 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		38C6337D28DBC17200955363 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38C6337C28DBC17200955363 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 38F1049B28DB923700560BE9 /* Project object */;
+}
